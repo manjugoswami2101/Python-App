@@ -2,7 +2,7 @@
 set -e
 
 # Pull the Docker image from Docker Hub
-echo
+docker pull python:3.10.19-slim-trixie
 
 # Run the Docker image as a container
-echo
+docker run -d -p 5000:5000 python:3.10.19-slim-trixie
